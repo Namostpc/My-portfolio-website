@@ -17,7 +17,7 @@ function projects() {
           <img src={port_pic} alt="portpic" className="project-card-img" />
           <h1 className="project-card-title">Portfolio website project</h1>
           <p className="project-card-description">
-            <p>This project is present about my portfolio website</p>
+            <p>This project for present about my portfolio website is this project contained everything about me </p>
             <ul className="tools-List">
                 <li>ReactJS</li>
                 <li>Scss</li>

@@ -6,6 +6,7 @@ import {
   FaSquareFacebook,
   FaLinkedin,
   FaSquareInstagram,
+  FaGithub
 } from "react-icons/fa6";
 import aosfunc from '../../aos'
 
@@ -24,7 +25,7 @@ function homepage() {
             to know more!!
           </p>
           <div className="contact-btn" data-aos="fade-up" data-aos-duration="1000">
-            <button>Contact Me</button>
+            <a href='#contact' className="contact-me-btn">Contact Me</a>
             <div className="social-media-contact">
               <ul>
                 <li>
@@ -57,6 +58,15 @@ function homepage() {
                     target="_blank"
                   >
                     <FaSquareFacebook />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Namostpc"
+                    className="github"
+                    target="_blank"
+                  >
+                    <FaGithub />
                   </a>
                 </li>
               </ul>
