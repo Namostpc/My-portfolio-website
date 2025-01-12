@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import ninjaPic from "../../assets/ninjapic.png";
 import Cheddo_logo from "../../assets/cheddo-logo.png";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import aosfunc from "../../aos";
 
 function experiences() {
+
+  aosfunc()
   const [readmoreqa, setReadmoreQA] = useState(false);
   const [readmorebe, setReadmoreBE] = useState(false);
 
@@ -26,12 +29,12 @@ function experiences() {
   );
 
   return (
-    <section id="experiences">
+    <section id="experiences" data-aos="fade-down" data-aos-duration="1000">
       <div className="header-text">
         <h1>My Experiences</h1>
       </div>
-      <div className="experiences-container">
-        <div className="card-container">
+      <div className="experiences-container" data-aos="fade-down" data-aos-duration="1500">
+        <div className="card-container" >
           <img src={ninjaPic} alt="ninja" className="card-img" />
           <h1 className="card-title">Ninja Van</h1>
           <p className="description">
@@ -42,7 +45,7 @@ function experiences() {
             it to the customer.
           </p>
         </div>
-        <div className="card-container">
+        <div className="card-container" >
           <img src={Cheddo_logo} alt="ninja" className="card-img" />
           <h1 className="card-title">
             Cheddo Tech <h5>(QA/Tester)</h5>
@@ -86,14 +89,6 @@ function experiences() {
             {readmorebe && readmoreBE}
           </p>
         </div>
-      </div>
-      <div className="point-down-exp">
-        <a href="#about">
-          <FaArrowCircleUp />
-        </a>
-        <a href="#projects">
-          <FaArrowCircleDown />
-        </a>
       </div>
     </section>
   );

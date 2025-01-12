@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./nav.scss";
+import Aos from "aos";
+import aosfunc from '../../aos'
 function Navbar() {
-  return (
+
+  aosfunc()
+  return (   
     <section id="nav-bar">
-    <div className="nav-container">
-      <div className="logo-container">
+    <div className="nav-container" data-aos="fade-up" data-aos-duration="1000">
+      <div className="logo-container" data-aos="fade-up" data-aos-duration="1000">
         <a href="/">NAMO</a>
       </div>
       <ul className="nav-list">

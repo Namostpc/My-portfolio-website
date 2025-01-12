@@ -2,16 +2,18 @@ import "./projects.scss";
 import React from "react";
 import port_pic from "../../assets/portfolio-pic.png";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import aosfunc from "../../aos";
 
 
 function projects() {
+    aosfunc()
   return (
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-duration="1000">
       <div className="header-text">
         <h1>My Projects</h1>
       </div>
-      <div className="project-container">
-        <div className="project-card-container">
+      <div className="project-container" data-aos="fade-down" data-aos-duration="1500">
+        <div className="project-card-container" >
           <img src={port_pic} alt="portpic" className="project-card-img" />
           <h1 className="project-card-title">Portfolio website project</h1>
           <p className="project-card-description">
@@ -25,7 +27,7 @@ function projects() {
             </h2>
           </div>
         </div>
-        <div className="project-card-container">
+        <div className="project-card-container" >
           <img src={port_pic} alt="portpic" className="project-card-img" />
           <h1 className="project-card-title">Portfolio website project</h1>
           <p className="project-card-description">
@@ -51,14 +53,6 @@ function projects() {
             </h2>
           </div>
         </div>
-      </div>
-      <div className="point-down">
-        <a href="#experiences">
-          <FaArrowCircleUp />
-        </a>
-        <a href="#skills">
-          <FaArrowCircleDown />
-        </a>
       </div>
     </section>
   );

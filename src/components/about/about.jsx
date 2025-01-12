@@ -2,18 +2,20 @@ import React from "react";
 import "./about.scss";
 import pic2 from "../../assets/pic2.jpeg";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import aosfunc from '../../aos'
 
 function About() {
+  aosfunc()
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-down" data-aos-duration="1000">
       <div className="header-text">
         <h1>About Me</h1>
       </div>
       <div className="about-container">
-        <div className="about-img">
+        <div className="about-img" data-aos="fade-up-right" data-aos-duration="500">
           <img src={pic2} alt="about img" />
         </div>
-        <div className="about-text">
+        <div className="about-text" data-aos="fade-up-left" data-aos-duration="500">
           <p>
             Hello visitor It's my pleasure to introduce myself.
             <br />
@@ -29,14 +31,6 @@ function About() {
             coding!
           </p>
         </div>
-      </div>
-      <div className="point-down">
-        <a href="#nav-bar">
-          <FaArrowCircleUp />
-        </a>
-        <a href="#experiences">
-          <FaArrowCircleDown />
-        </a>
       </div>
     </section>
   );
