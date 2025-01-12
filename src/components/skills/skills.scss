@@ -1,0 +1,33 @@
+#skills {
+  width: 100%;
+  margin-top: 4rem;
+  align-items: center;
+  position: relative;
+
+  .skills-contatiner{
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 3rem 1rem 3rem;
+
+    .skill-list {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 15rem;
+            padding: 1rem;
+        }
+
+        p{
+            // border: 1px solid red;
+            padding: 1rem;
+            font-size: 28px;
+        }
+    }
+  }
+}

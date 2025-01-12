@@ -53,10 +53,10 @@ function projects() {
         </div>
       </div>
       <div className="point-down">
-        <a href="#nav-bar">
+        <a href="#experiences">
           <FaArrowCircleUp />
         </a>
-        <a href="#experiences">
+        <a href="#skills">
           <FaArrowCircleDown />
         </a>
       </div>
