@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import "./homepage.scss";
 import pic1 from "../../assets/pic1.jpeg";
+import profile_pic from '../../assets/profile-pic.jpg'
 import { FaLine, FaArrowCircleDown } from "react-icons/fa";
 import {
   FaSquareFacebook,
@@ -16,6 +17,11 @@ function homepage() {
   return (
     <section id="home">
       <div className="home-container">
+      <div className="home-img" data-aos="fade-up-right" data-aos-duration="1500">
+          <div className="border-img">
+            <img src={profile_pic} alt="hero-profile" />
+          </div>
+        </div>
         <div className="home-intro">
           <h1 data-aos="fade-up" data-aos-duration="1000">Namo Sutthipreecha</h1>
           <h2 data-aos="fade-up" data-aos-duration="1000">Junior font-end & back-end developer</h2>
@@ -74,11 +80,7 @@ function homepage() {
           </div>
         </div>
 
-        <div className="home-img" data-aos="fade-up-right" data-aos-duration="1500">
-          <div className="border-img">
-            <img src={pic1} alt="hero-profile" />
-          </div>
-        </div>
+        
       </div>
     </section>
   );

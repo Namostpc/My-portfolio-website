@@ -54,11 +54,6 @@ function contact() {
           </div>
         </div>
       </div>
-      <div className="point-down">
-        <a href="#nav-bar">
-          <FaArrowCircleUp />
-        </a>
-      </div>
     </section>
   );
 }

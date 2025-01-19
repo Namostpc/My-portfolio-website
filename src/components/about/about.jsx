@@ -22,7 +22,7 @@ function About() {
             My name is Namo Sutthipreecha, you can call me "mo" now I'm 27 years
             old. I graduated from Mea Fah Luang University with GPA 3.4 (2nd
             honor) in Aviation Business Management (Logistic Management).
-            <br />I have some experience in IT industry for 2 years, I was be
+            <br /> <br /> I have some experience in IT industry for 2 years, I was be
             Quality Assurance for 1 year and I was be back-end developer for 1
             year with the same company.
             <br />

@@ -2,18 +2,17 @@ import "./skills.scss";
 import React from "react";
 import Css_logo from "../../assets/css3-logo.svg";
 import html_logo from "../../assets/html-5-logo.svg";
-import scss_logo from '../../assets/scss-logo.svg'
-import js_logo from '../../assets/js-logo.svg'
-import ts_logo from '../../assets/typescript.svg'
-import react_pic from '../../assets/react.svg'
-import postgresql_logo from '../../assets/postgresql.svg'
-import postman_logo from '../../assets/postman-icon.svg'
+import scss_logo from "../../assets/scss-logo.svg";
+import js_logo from "../../assets/js-logo.svg";
+import ts_logo from "../../assets/typescript.svg";
+import react_pic from "../../assets/react.svg";
+import postgresql_logo from "../../assets/postgresql.svg";
+import postman_logo from "../../assets/postman-icon.svg";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 import aosfunc from "../../aos";
 
-
 function skills() {
-    aosfunc()
+  aosfunc();
   return (
     <section id="skills" data-aos="fade-up" data-aos-duration="1000">
       <div className="header-text">

@@ -4,34 +4,13 @@
   margin-top: 4.5rem;
   align-items: center;
   position: relative;
-  bottom: 4.5rem;
-
-  .point-down-exp {
-    position: absolute;
-    // border: 1px solid red;
-    display: flex;
-    right: 0;
-    bottom: -20px;
-    justify-content: end;
-    gap: 2px;
-
-    a{
-        // border: 1px solid red;
-        padding: 10px 20px;
-        font-size: 36px;
-        color: rgb(124, 121, 121);
-    }
-
-    a:hover {
-        color: black;
-    }
-}
 }
 
 .experiences-container {
   display: flex;
   justify-content: space-around;
   //   border: 1px solid red;
+  margin-top: 2rem;
 
   .card-container {
     width: 25rem;
@@ -39,9 +18,8 @@
     box-shadow: 0px 10px 8px #999;
     display: flex;
     flex-direction: column;
-    margin: 4rem 1.5rem;
+    margin: 2rem 1rem;
     background-color: white;
-    height: fit-content;
 
     .card-img {
       width: 100%;
@@ -82,6 +60,46 @@
   }
 }
 
-#more {
-  display: none;
+
+@media screen and (max-width: 1120px) {
+    .experiences-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // border: 1px solid red;
+        justify-items: center;
+        align-items: center;
+        // .card-container{
+        // // border: 1px solid red;
+        //     width: 20rem;
+        // }
+    }
+
+@media screen and (max-width: 768px) {
+    .experiences-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        // border: 1px solid red;
+        justify-items: center;
+        align-items: center;
+        .card-container{
+        // border: 1px solid red;
+            width:60%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experiences-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // border: 1px solid red;
+        justify-items: center;
+        align-items: center;
+        .card-container{
+        // border: 1px solid red;
+            width: 80%;
+        }
+    }
+}
 }
